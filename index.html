@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Lectia 1 HMTL&CSS</title>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -11,6 +12,7 @@
   <body>
     <!--Header section-->
     <header class="header">
+      <div class="container">
       <div class="header__logo">
         <a href="#"><img src="./img/logo.svg" alt="Logo" /></a>
       </div>
@@ -24,26 +26,30 @@
       </nav>
       <div class="header__info"><a href="tel:+380441111111">+38 044 111 11 11</a></div>
       <button class="header__booking button">Book a serivce</button>
+      </div>
     </header>
 
     <!--Portiunea principala a paginii web-->
     <main>
       <!--Hero section-->
       <section class="hero-section">
+        <div class="container">
         <h5 class="hero-section__subtitle">A hair salon for men in Kyiv</h5>
         <h1 class="hero-section__title">BarberShop</h1>
         <p class="hero-section__text">
           We are experts in trendy men's haircuts. <br />
           We work quickly, carefully, and tastefully.
         </p>
+        </div>
       </section>
 
       <!--About section-->
       <section class="about">
+        <div class="container">
         <!--Div cu imagini-->
-        <div>
-          <img src="img/img-1.png" alt="Img 1" width="100px" />
-          <img src="img/img-2.png" alt="Img 2" width="100px" />
+        <div class="about__images">
+          <img class="about__image" src="img/img-1.png" alt="Img 1" width="100px" />
+          <img class="about__image" src="img/img-2.png" alt="Img 2" width="100px" />
         </div>
 
         <!--Div cu info-->
@@ -63,24 +69,26 @@
           </p>
           <button class="about__button button">Book a serivce</button>
         </div>
+        </div>
       </section>
 
       <!--Prices & services section-->
-      <section>
-        <h5>Spend time in the company of the best craftsmen</h5>
-        <h2>Services and Prices</h2>
-        <ul>
-          <li>
-            <p>Men's Haircut <span></span> from 300 UAH</p>
+      <section class="services">
+        <div class="container">
+        <h5 class="services__subtitle">Spend time in the company of the best craftsmen</h5>
+        <h2 class="services__title">Services and Prices</h2>
+        <ul class="services__list">
+          <li class="services__item">
+            <p class="services_description">Men's Haircut <span class="services__price"></span> from 300 UAH</p>
           </li>
-          <li>
-            <p>Beard Trim <span></span> from 200 UAH</p>
+          <li class="services__item">
+            <p class="services_description">Beard Trim <span class="services__price"></span> from 200 UAH</p>
           </li>
-          <li>
-            <p>Mustache Trim <span></span> from 200 UAH</p>
+          <li class="services__item">
+            <p class="services_description">Mustache Trim <span class="services__price"></span> from 200 UAH</p>
           </li>
-          <li>
-            <p>Straight Razor Shave<span></span> from 200 UAH</p>
+          <li class="services__item">
+            <p class="services_description">Straight Razor Shave<span class="services__price"></span> from 200 UAH</p>
           </li>
         </ul>
 
@@ -100,10 +108,12 @@
         </ul>
 
         <button type="button">Book a service</button>
+        </div>
       </section>
 
       <!--Reviews-->
       <section>
+        <div class="container">
         <ul>
           <li>
             <p>
@@ -130,10 +140,12 @@
             <h2>Why do they come to us?</h2>
             <p>Only good things are said about us. But it is better  to see and feel 1 time than to read 10 times. </p>
         </div>
+        </div>
       </section>
 
       <!--Our barbers-->
       <section>
+        <div class="container">
         <h5>for true connoisseurs of the atmosphere</h5>
         <h2>Our Barbers </h2>
 
@@ -157,16 +169,19 @@
             <p>Extreme Barber</p>
             </div>
         </div>
+        </div>
       </section>
 
       <!--Our place-->
-      <section>
-        <h5>In Latin, "barba" means "beard"</h5>
-        <div> 
-            <img src="./img/foto-1.jpg" alt="Foto 1">
-            <img src="./img/foto-2.jpg" alt="Foto 2">
-            <img src="./img/foto-3.jpg" alt="Foto 3">
-            <img src="./img/foto-4.jpg" alt="Foto 4">
+      <section class="place">
+        <div class="container">
+        <h class="place__subtitle">In Latin, "barba" means "beard"</h>
+        <div class="place__images"> 
+            <img src="./img/foto-1.jpg" alt="Foto 1" class="place__image">
+            <img src="./img/foto-2.jpg" alt="Foto 2" class="place__image">
+            <img src="./img/foto-3.jpg" alt="Foto 3" class="place__image">
+            <img src="./img/foto-4.jpg" alt="Foto 4" class="place__image">
+        </div>
         </div>
       </section>
 
@@ -175,13 +190,14 @@
     </main>
 
     <!--Footer section-->
-    <footer>
-        <p>&copy Copyright 2022</p>
-        <ul>
-            <li>Instagram</li>
-            <li>Youtube</li>
+    <footer class="footer">
+      <div class="container">
+        <p class="footer_copyright">&copy Copyright 2022</p>
+        <ul class="footer__social">
+            <li class="footer__social-item">Instagram</li>
+            <li class="footer__social-item">Youtube</li>
          </ul>
-
+      </div>
     </footer>
   </body>
 </html>

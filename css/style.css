@@ -7,11 +7,38 @@
   --secondary font: 'Raleway', sans-serif;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:  var(--primary);
+}
+
+img{
+    display: block;
+    max width: 100%;
+    height: auto;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+a  {
+    
+}
+
 /* Header section style*/
 
 .header{
 background-color: #303030;
 }
+
+ a{
+    color: inherit;
+ }
 
 .header__logo{
     background-color: var(--white);
@@ -41,7 +68,6 @@ font-weight: 700;
 font-size: 12px;
 line-height: 16px;
 color: var(--white);
-
 }
 
 .button {
@@ -66,6 +92,7 @@ border-radius: 25px;
 
 .hero-section{
     background-color: #303030;
+    height: 100vh;
 }
 
 .hero-section__subtitle{
@@ -74,6 +101,7 @@ border-radius: 25px;
     font-weight: 600;
     line-height: 14px;
     color: var(--light-dark);
+    margin-bottom: 20px;
 }
 
 .hero-section__title {
@@ -82,6 +110,8 @@ border-radius: 25px;
     font-weight: 700;
     line-height: 84px;
     color: var(--white);
+        margin-bottom: 20px;
+
 }
 
 .hero-section__text{
@@ -102,6 +132,13 @@ border-radius: 25px;
     font-weight: 600;
     line-height: 14px;
     color: var(--black);
+    margin-bottom: 20px;
+}
+
+.about__image{
+    display: inline-block;
+    width: 270px;
+    height: 445px;
 }
 
 .about__title{
@@ -110,6 +147,7 @@ border-radius: 25px;
     font-weight: 700;
     line-height: 50px;
     color: var(--black);
+        margin-bottom: 20px;
 }
 
 .about__text{
@@ -118,8 +156,13 @@ border-radius: 25px;
     font-weight: 400;
     line-height: 30px;
     color: var(--black);
-}
+    }
 
 .about__button{
+    margin-top: 40px;
     color: var(--black);
+}
+
+.container{
+    padding: 0 55;
 }
